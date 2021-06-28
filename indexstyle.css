@@ -1,28 +1,40 @@
+body {
+  margin: 0;
+}
+
 div {
   width: 200px;
   height: 200px;
 }
 
 h1 {
-  width: 50px;
-  height: 50px;
+  width: 200px;
   background-color: #264653;
   color: #e9c46a;
-  border: 5px solid #fae1dd;
   padding-left: 100px;
   padding-bottom: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+span {
+  margin-left: 100px
 }
 
 #one {
   background-color: #264653;
   color: #e9c46a;
   border: 3px solid black;
+  margin-left: 50px;
+  margin-bottom: 100px;
 }
 
 #two {
   background-color: #2a9d8f;
   color: #e9c46a;
   padding-right: 50px;
+  margin: 200px;
 }
 
 #three {
