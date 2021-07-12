@@ -1,18 +1,20 @@
-let userList = [];
+const userList = [];
 
 let userInput = "";
 
-while (userInput !== "quit") {
+while (userInput !== "quit" && userInput !== "q") {
   userInput = prompt("What would you like to do?");
   if (userInput === "quit") {
     console.log("You quit the app");
     break;
   } else if (userInput === "new") {
-    newItem = prompt("What would you like to add to the list?");
+    let newItem = prompt("What would you like to add to the list?");
     userList.push(newItem);
     console.log(`${newItem} added to the list!`);
   } else if (userInput === "delete") {
-    deleteItem = parseInt(prompt("What index item would you like to delete?"));
+    let deleteItem = parseInt(
+      prompt("What index item would you like to delete?")
+    );
     userList.splice(deleteItem, 1);
   } else if (userInput === "list") {
     console.log(`*********`);
